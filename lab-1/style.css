@@ -1,0 +1,60 @@
+body {
+    background-color: #ed7777;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #ededed;
+    width: 550px;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    border: 1px solid #dcdcdc;
+    padding: 1rem;
+    width: 100%;
+    appearance: none;
+    margin: 1rem auto;
+}
+
+input::placeholder {
+    color: #dcdcdc
+}
+
+form {
+    padding: 1rem;
+}
+
+h1 {
+    color: #888888;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+button {
+    display: block;
+    background-color: #7dd9d5;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem auto; 
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+
+label {
+    color: #888;
+}
+

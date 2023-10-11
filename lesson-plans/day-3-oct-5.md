@@ -1,5 +1,5 @@
 # Lesson Plan
-6:30 - 7     Any questions on the lab
+6:30 - 7     Would you rather live in the ocean or on the moon? Any questions on the lab
 7 - 7:30     Responsive / Flexbox
 7:30 - 7:45  Break
 7:45 - 8     Forms

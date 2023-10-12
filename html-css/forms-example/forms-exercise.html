@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    form { 
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <form method="post">
+        <label>
+            <input type="text" name="first-name" />
+            First Name 
+        </label>
+    
+        <label>
+            <input type="text" name="last-name" />
+            Last Name
+        </label>
+    
+        <label>
+            DOB
+            <input type="date" name="date" />
+        </label>
+    
+        <select name="level-1">
+            <option value="beginner">Beginner</option>
+            <option value="inter" selected>Intermediate</option>
+            <option value="expert">Expert</option>
+        </select>
+    
+        <input type="range" name="level" min="0" max="2">
+    
+        <label><input type="radio" name="bootcamp" value="c-sharp" />C#</label>
+        <label><input type="radio" name="bootcamp" value="js" />JavaScript</label>
+   
+        <label> <input type="checkbox" name="food" /> Sweet </label>
+        <label> <input type="checkbox" name="food" /> Savory </label>
+        <label> <input type="checkbox" name="food" /> Both </label>
+        <label> <input type="checkbox" name="food" /> Water </label>
+
+        <label> Favorite Color <input type="color" name="color" /> </label>
+    
+        <button> Submit </button>
+    </form>
+</body>
+</html>

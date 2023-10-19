@@ -60,7 +60,7 @@ let counter = 0;
 while(true) {
     counter++;
 
-    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
 
     if (randomNumber !== 5) {
         console.log("randomNumber is not equal to 5")

@@ -31,3 +31,9 @@ const frenchPress = (gramsOfCoffee, unit) => calculateCoffeeRatio(gramsOfCoffee,
 
 console.log(pourOver(50, 'grams'))
 console.log(frenchPress(50, 'grams'))
+
+for(let i=1; i <= 10; i++){
+    console.log(i);
+}
+
+// i doesn't exist

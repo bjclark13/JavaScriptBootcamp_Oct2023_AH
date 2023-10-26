@@ -29,7 +29,7 @@ const isDead = health => health <= 0
 
 //function declaration
 function fight(player1, player2, player1Health, player2Health) {
-  while (true) {
+	while (true) {
     const attacker = chooseOption(player1, player2);
     if (attacker === player1) {
       player2Health = attackPlayer(player2Health);

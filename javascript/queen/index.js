@@ -5,42 +5,61 @@ const queen = {
 	moves: [],
 
 	canMoveThere(x, y) {
-		// has to be within 8 x 8
-		if (x < 8 && y < 8) {
-			// can be diagonal
-			if ( Math.abs(x - this.x) === Math.abs(y - this.y) ) {
-				return true
+		// rules for queens:
+		// has to be on the board (8 x 8)
+		if ( x < 8 && y < 8 ) {
+			// or diagonal
+			const dx = Math.abs(this.x - x);
+			const dy = Math.abs(this.y - y);
+
+			// the difference between where we are
+			// and where we are going is the same
+			// for both x and, that's diagonal (legal)
+			if (dx === dy) {
+				return true;
 			}
 
-			// can be horizontal
-			if ( this.x ===  x) {
-				return true
+			// has to be horizontal
+			if ( y === newY ) {
+				return true;
 			}
 
-			// can be vertical
-			if (this.y === y ){
+			// or vertical
+			if ( x === newX) {
 				return true;
 			}
 		}
-
 
 		return false;
 	},
 
 	move(newX, newY) {
+		// if we can move
 		if (this.canMoveThere(newX, newY)) {
-			this.moves.push({x: newX, y: newY})
+			// set x and y to newX and newY
 			this.x = newX;
 			this.y = newY;
 
-			console.log("new location",this.moves)
-		} else {
-			console.log("can't move there!", newX, newY)
+			// add our location to moves array
+			this.moves.push({
+				x: newX,
+				y: newY,
+			})
 		}
+
 	}
 }
 
-queen.move(1,0)
-queen.move(1,7)
-queen.move(1,2)
-queen.move(2,4)
+
+//  2, 0
+//  3, 1
+-- diagonal
+
+// 2, 0
+// 3, 0
+
+// 2, 0
+// 2, 1
+
+// 2, 0
+// 3, 2

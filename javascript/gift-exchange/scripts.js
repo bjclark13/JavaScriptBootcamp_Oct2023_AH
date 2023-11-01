@@ -17,7 +17,7 @@
 			for (let j = 0; j < household.length; j++) {
 				const giver = household[j];
 				const eligibleReceivers = remainingFamily
-					.filter((otherHousehold, index) => index !== i)
+					.filter((_, index) => index !== i)
 					.reduce((acc, otherHousehold) => acc.concat(otherHousehold), []);
 
 				const receiverIndex = Math.floor(Math.random() * eligibleReceivers.length);

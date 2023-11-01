@@ -69,3 +69,35 @@ while(true) {
         break; // leave the while
     }
 }
+
+
+
+
+function doTheThing() {
+    var myThingThatImGoingToDo = true;
+}
+doTheThing()
+
+// put through the minifier...
+"use strict"
+{
+    function a() {
+        var b = true;
+        console.log(b);
+    }
+    a()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

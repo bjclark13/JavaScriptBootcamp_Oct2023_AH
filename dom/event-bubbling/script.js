@@ -1,8 +1,12 @@
 "use strict";
 {
+  // get the parent
   document.querySelectorAll(".parent").forEach((parent) => {
+    // when we click the parent, run this function
     parent.addEventListener("click", (e) => {
+      // check to see if the thing we clicked is a button
       if (e.target.localName === "button") {
+        //re move the parent
         parent.remove();
       }
     });
@@ -10,6 +14,7 @@
 
   document.querySelectorAll("#task-list").forEach((task) => {
     task.addEventListener("click", (e) => {
+      // don't bubble up to the parent element
       e.stopPropagation();
       if (e.target.localName === "button") {
         const button = e.target;

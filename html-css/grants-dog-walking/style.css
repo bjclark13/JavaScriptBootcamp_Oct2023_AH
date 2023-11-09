@@ -35,6 +35,34 @@ nav {
 	align-items: flex-start;
 }
 
+main {
+	padding: 2rem;
+}
+
+button {
+	color: #551A8B;
+	background-color: rgba(255,255,255,.8);
+	appearance: none;
+	border: 1px solid #551A8B;
+	padding: 8px 15px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1rem;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+body.dark {
+	background-color: #222;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+	color: rgba(255,255,255,.8);
+}
+
+.dark button {
+	background-color: #551A8B;
+	color: rgba(255,255,255,.8);
+}
+
 @media screen and (min-width: 768px) {
 	header, nav {
 		flex-direction: row-reverse;

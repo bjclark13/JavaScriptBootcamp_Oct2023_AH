@@ -5,6 +5,7 @@ function main() {
   // Remove the "big" class from the "shrink-me" paragraph.
   document.querySelector("#shrink-me").classList.remove("big");
 
+  
   // Find all the <li>s and log their text content to the console.
   const listItems = document.querySelectorAll("li");
 

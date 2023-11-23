@@ -1,0 +1,14 @@
+.coin {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover
+}
+
+.dime {
+  background-size: cover;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/2017-D_Roosevelt_dime_obverse_transparent.png")
+}

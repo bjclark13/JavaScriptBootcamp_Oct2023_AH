@@ -1,0 +1,19 @@
+figure {
+	padding: 10px;
+	background-color: blue;
+	height: 80vh;
+	width: 96vw;
+}
+
+img {
+	height: 150px;
+	width: 50px!important;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+	width: 700px;
+}

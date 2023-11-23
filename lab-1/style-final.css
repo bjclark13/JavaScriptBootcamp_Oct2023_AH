@@ -1,0 +1,64 @@
+h1 {
+    color: darkgray;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: salmon;
+    font-family: sans-serif;
+}
+
+main {
+    background: #f8f8f8;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    box-shadow: 0px 0 8px black;;
+}
+
+form {
+    padding: 2rem;
+}
+
+button {
+    background-color: teal;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    appearance: none;
+    border: none;
+    color: white;
+    display: block;
+    margin: auto
+}
+
+input {
+    border: gray;
+
+}
+input[type=text], input[type=password] { 
+    padding: 1rem .5rem;
+    width: 100%;
+    display: block;
+    margin: 2rem auto
+}
+
+input::placeholder {
+    color: lightgray
+}
+
+label {
+    display: block;
+    color: darkgray
+}
+
+input[type=checkbox] {
+    padding: 2px;
+    font-size: 2rem;
+}
+

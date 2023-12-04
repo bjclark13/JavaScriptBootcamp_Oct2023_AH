@@ -1,0 +1,10 @@
+.shape {
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.circle {
+	border-radius: 50%;
+}

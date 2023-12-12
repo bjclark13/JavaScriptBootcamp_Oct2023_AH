@@ -3,6 +3,7 @@ const {
   scorePalindrome,
   convertTemperature,
   reverseCase,
+  countDoubleLetters,
 } = require("../src/misc"); // destructuring
 
 describe("countLetters", () => {
@@ -104,3 +105,37 @@ describe("reverseCase", () => {
     expect(reverseCase("2:00pm")).toBe("2:00PM");
   });
 });
+
+describe('countDoubleLetters', () => {
+  it('sandy', () => {
+    expect(countDoubleLetters('sandy')).toBe(0)
+  })
+
+  it('apple', () => {
+    expect(countDoubleLetters('apple')).toBe(1)
+  })
+
+  it('poll', () => {
+    expect(countDoubleLetters('poll')).toBe(1)
+  })
+
+  it('success', () => {
+    expect(countDoubleLetters('success')).toBe(2)
+  })
+
+  it('fizzbuzzers', () => {
+    expect(countDoubleLetters('fizzbuzzers')).toBe(2)
+  })
+
+  it('fizzbuzzers', () => {
+    expect(countDoubleLetters('fizzbuzzers')).toBe(2)
+  })
+
+  it('feelinggood', () => {
+    expect(countDoubleLetters('feelinggood')).toBe(3)
+  })
+
+  it('mississippi', () => {
+    expect(countDoubleLetters('mississippi')).toBe(3)
+  })
+})

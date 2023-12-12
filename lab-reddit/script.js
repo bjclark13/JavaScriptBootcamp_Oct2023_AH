@@ -37,13 +37,14 @@
     const response = await fetch("https://www.reddit.com/r/aww/.json");
     const redditData = await response.json();
 
-    for (const child of redditData.data.children) {
-      if (!child.data.is_self)
-        addRedditPost(
-          child.data.title,
-          child.data.permalink,
-          child.data.thumbnail
-        );
+    const { children } = redditData.data;
+
+    for (const child of children) {
+      if (!child.data.is_self) {
+        const { title, permalink, thumbnail } = child.data;
+
+        addRedditPost(title, permalink, thumbnail);
+      }
     }
   };
 

@@ -43,4 +43,18 @@ function convertTemperature(fromTemp, toUnit) {
     return (temp - 32) * (5/9);
 }
 
-module.exports = { countLetters, scorePalindrome, convertTemperature };
+function reverseCase(word) {
+    let newWord = ""
+    for(let i = 0; i < word.length; i++) {
+        let letter = word[i]
+        if (letter.toUpperCase() === letter) {
+            newWord += letter.toLowerCase()
+        } else {
+            newWord += letter.toUpperCase()
+        }
+    }
+
+    return newWord
+}
+
+module.exports = { countLetters, scorePalindrome, convertTemperature, reverseCase};

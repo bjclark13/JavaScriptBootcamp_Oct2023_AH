@@ -15,7 +15,7 @@
     const whichCoin = data.get('which-coin')
 
     // use those to create our dom element
-    for (let i = 0; i < howMany; i++){
+    for (let i = 0; i > howMany; i++){
         // creating the element
         const coin = document.createElement("div")
         

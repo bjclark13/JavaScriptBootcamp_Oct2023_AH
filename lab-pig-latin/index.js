@@ -2,30 +2,46 @@ function pigLatin(word) {
 	// convert the word into an array, all lower case
 	const letters = word.toLowerCase().split('');
 
-	// if the first letter is a vowel
-	const vowels = ['a', 'e', 'i', 'o', 'u'];
-	if ( vowels.includes(letters[0]) ) {
-		// add -way
-		letters.push('way');
+	if ( startsWithVowel(letters) ) {
+		addWay()
 	} else {
-		while(!vowels.includes(letters[0])) {
-			// take the vowel off the front
-			const firstLetter = letters.shift();
-			// put it at the end
-			letters.push(firstLetter);
-		}
-		// add -ay
-		letters.push('ay');
+		moveToEndUntilVowel(letters)
+		addAy();
 	}
 
 	return letters.join('');
 }
 
-// function pigLatin2(word) {
-// 	// TODO
-// }
+function addAy() {
+	// add -ay
+	letters.push('ay');
+}
 
-module.exports = pigLatin
+function addWay() {
+	letters.push('way');
+}
 
-// or
-// module.exports = { pigLatin, pigLatin2 }
+function moveToEndUntilVowel(letters) {
+	while(!startsWithVowel(letters)) {
+		// take the vowel off the front
+		const firstLetter = letters.shift();
+		// put it at the end
+		letters.push(firstLetter);
+	}
+}
+
+function startsWithVowel(arrayOfLetters) {
+	const listOfVowels = ['a', 'e', 'i', 'o', 'u'];
+
+	return listOfVowels.includes(arrayOfLetters[0])
+}
+
+// Code is communication: we're writing for humans!
+
+// 1. Name variables / functions to define what they actual do
+// 2. We shouldn't have to rely on comments to understand how our code works
+// 3. Don't get too clever
+// 4. DRY -- Don't Repeat Yourself
+// 5. Break functions up into the smallest logical chunk
+
+module.exports = { startsWithVowel, addAy, addWay, pigLatin, moveToEndUntilVowel }

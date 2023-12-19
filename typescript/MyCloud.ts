@@ -6,5 +6,9 @@ export class HelloCdkStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    new ec2.Instance(this, 'MyInstance', {
+      instanceType: ec2.InstanceType('t2.micro'),
+
+    })
   }
 }

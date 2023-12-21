@@ -25,7 +25,7 @@ interface Person {
 // Classes are a fancy way to create objects with the same fields and methods
 
 // implements means it has to conform to this interface
-class Student implements Person {
+export class Student implements Person {
     // properties
     firstName: string;
     lastName: string;

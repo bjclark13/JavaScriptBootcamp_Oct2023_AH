@@ -1,0 +1,8 @@
+import { GrandCircusStudent } from "./GrandCircusStudent";
+import { Cohort } from "./Student";
+
+export class CSharpStudent extends GrandCircusStudent {
+	constructor(name: string, age: number) {
+		super(name, age, Cohort.CSharp);
+	}
+}

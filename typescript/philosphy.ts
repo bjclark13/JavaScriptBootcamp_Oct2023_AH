@@ -7,11 +7,13 @@ const getArticle = async (article: string, num: number = 0): Promise<number|null
     const body = await resp.text();
     const link = getFirstATag(body)
 
+    // exit step -> we're done
     if (link === "/wiki/Philosophy") {
         return num; 
     } else if (!link) {
         return null
     } else {
+        // recursive step
         return getArticle(link, num+1);
     }
 }

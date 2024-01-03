@@ -1,6 +1,8 @@
 # New Years Review Exercise
 Happy New Year! We are going to review some concepts that we have learned thus far by creating a New Years Resolution app.
 
+Do your best to complete what you can in the time allotted, no pressure if you're not able to finish it all!
+
 Create an HTML page that includes:
 1. A form for you to enter in a resolution, as well as a number representing it's priority (higher means more important).
 2. A list (`<ul>`) of your new years resolutions.

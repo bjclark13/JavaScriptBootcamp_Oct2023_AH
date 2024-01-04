@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Years Resolution</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>New Years Resolution</h1>
+      <form>
+        <h2>Add a Resolution</h2>
+        <p>
+          <label for="goal">Goal</label>
+          <input id="goal" name="goal" type="text" />
+        </p>
+
+        <p>
+          <label>
+            Priority
+            <input name="priority" type="number" value="1" step="1" />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Due Date
+            <input name="due-date" type="date" />
+          </label>
+        </p>
+
+        <button>Submit</button>
+      </form>
+
+      <ul id="resolutions"></ul>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

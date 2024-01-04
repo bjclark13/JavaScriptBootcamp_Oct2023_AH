@@ -1,2 +1,1 @@
-import { getDaysTilChristmas } from "./christmas";
-const { getDaysTilChristmas } = require('./christmas');
+import thisThing from "./christmas";

@@ -1,11 +1,13 @@
+# New Years Database
 Create a database table to hold your New Years Resolutions.
 
 This should include:
-    - id (serial primary key)
-    - goal (string)
-    - priority (number)
-    - deadline (datetime)
-    - complete (boolean)
+- id (serial primary key)
+- goal (string)
+- priority (number)
+- deadline (datetime)
+- complete (boolean)
+
 and any other values you think are necessary.
 
 Add at least 5 different sample resolutions using INSERT statements.
